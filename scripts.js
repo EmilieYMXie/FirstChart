@@ -20,7 +20,7 @@
       	for(var i=0;i<jsonFREDData.observations.length; i++){
       		
       		var itemArray = [];
-      		itemArray.push(jsonFREDData.observations[i].data);
+      		itemArray.push(jsonFREDData.observations[i].date);
       		itemArray.push(Number(jsonFREDData.observations[i].value));
       		
       		arraysData.push(itemArray); //push data from small list to bigger list
