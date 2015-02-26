@@ -1,5 +1,22 @@
-.border{
+.border {
 	border: 1px solid navy;
 	background-color: linen;
-    margin-left: 20px;
+	margin-left: 20px;
+}
+
+#chart_div {
+	border: solid 1px teal;
+}
+.col-md-1 {
+	background-color: linen;
+}
+.col-md-8 {
+	background-color: teal;
+}
+.col-md-4 {
+	background-color: salmon;
+}
+.col-md-6 {
+	background-color: pink;
+}
 }
