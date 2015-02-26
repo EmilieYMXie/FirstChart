@@ -1,4 +1,18 @@
 
+	/*
+	 * Area for my Good viz style objects: fonts, colors etc
+	 */
+	
+var myTextStyle = {
+	fontName : 'Times-Roman',
+	fontSize : 18,
+	bold : true,
+	italic : true,
+	color : '#871b47', // The color of the text.
+	auraColor : '#d799ae', // The color of the text outline.
+	opacity : 0.8 // The transparency of the text.
+}
+
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});
 
