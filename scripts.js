@@ -1,18 +1,4 @@
 
-	/*
-	 * Area for my Good viz style objects: fonts, colors etc
-	 */
-	
-var myTextStyle = {
-	fontName : 'Times-Roman',
-	fontSize : 18,
-	bold : true,
-	italic : true,
-	color : '#871b47', // The color of the text.
-	auraColor : '#d799ae', // The color of the text outline.
-	opacity : 0.8 // The transparency of the text.
-}
-
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});
 
@@ -57,7 +43,11 @@ var myTextStyle = {
                        };//end of var options;
 
 		options.hAxis.textStyle = myTextStyle;
-		console.log(options.hAxis.textStyle);
+		console.log(options.hAxis.textStyle);//Making hAxis (horizontal axis) have the text style of my var myTextStyles
+
+		options.vAxis.textStyle = myTextStyle;
+		console.log(options.vAxis.textstyle);//Do the same for vAxis (vertical axis)
+		
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
         chart.draw(data, options);
