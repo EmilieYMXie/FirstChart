@@ -35,7 +35,19 @@
         // Set chart options
         var options = {'title':'Eating Too Much Pizza',
                        'width':400,
-                       'height':300};
+                       'height':300,
+                       'hAxis':{
+                       		'textStyle': {
+                       			fontName: 'Times-Roman',
+      							fontSize: 18,
+     							bold: true,
+      							italic: true,
+      							color: '#871b47',     // The color of the text.
+      							auraColor: '#d799ae', // The color of the text outline.
+      							opacity: 0.8          // The transparency of the text.
+                       			}//end textStyle
+                       		}//end of hAxis
+                       }//end of var options;
 
         // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
