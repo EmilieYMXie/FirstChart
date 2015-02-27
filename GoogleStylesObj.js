@@ -12,3 +12,7 @@ var myTextStyle = {
 	auraColor : '#d799ae', // The color of the text outline.
 	opacity : 0.8 // The transparency of the text.
 };
+
+var axisFormat = {
+	format: 'MMM d, y'
+}
