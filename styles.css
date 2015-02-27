@@ -19,4 +19,16 @@
 .col-md-6 {
 	background-color: pink;
 }
+.col-md-9 {
+	border: solid 1px teal;
+}
+.col-md-3 {
+	border: solid 1px navy;
+}
+.col-md-5 {
+	border: solid 1px pink;
+}
+.col-md-7 {
+	border: solid 1px purple;
+}
 }
