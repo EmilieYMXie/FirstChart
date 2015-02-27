@@ -43,7 +43,8 @@ function drawChart() {
 		'height' : 500,
 		'hAxis' : {
 			'title': 'Horizontal Axis Title',
-			'gridlines':{}
+			'gridlines':{},
+			'format':{}
 		}, //end of hAxis
 		'vAxis' : {}//end of vAxis
 	
@@ -60,8 +61,7 @@ function drawChart() {
 	
 	options.vAxis.gridlines = axisGridlines;
 	console.log(options.vAxis.gridlines);
-	
-	
+		
 
 	// Instantiate and draw our chart, passing in some options.
 	var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
