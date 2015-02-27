@@ -39,10 +39,14 @@ function drawChart() {
 	// Set chart options
 	var options = {
 		'title' : 'Eating Too Much Pizza',
-		'width' : 400,
-		'height' : 300,
-		'hAxis' : {}, //end of hAxis
+		'width' : 600,
+		'height' : 500,
+		'hAxis' : {
+			'title': 'Horizontal Axis Title',
+			'gridlines':{}
+		}, //end of hAxis
 		'vAxis' : {}//end of vAxis
+	
 	};//end of var options;
 
 	options.hAxis.textStyle = myTextStyle;
@@ -50,6 +54,14 @@ function drawChart() {
 
 	options.vAxis.textStyle = myTextStyle;
 	console.log(options.vAxis.textstyle);//Do the same for vAxis (vertical axis)
+	
+	options.hAxis.gridlines = axisGridlines;
+	console.log(options.hAxis.gridlines);
+	
+	options.vAxis.gridlines = axisGridlines;
+	console.log(options.vAxis.gridlines);
+	
+	
 
 	// Instantiate and draw our chart, passing in some options.
 	var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
